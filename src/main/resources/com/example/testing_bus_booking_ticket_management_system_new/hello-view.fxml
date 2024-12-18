@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testing_bus_booking_ticket_management_system_new.HelloController">
+    <children>
+        <AnchorPane fx:id="main_form" prefHeight="500.0" prefWidth="700.0">
+            <children>
+                <AnchorPane prefHeight="500.0" prefWidth="360.0">
+               <children>
+                  <MediaView fx:id="mediaView" disable="true" fitHeight="500.0" fitWidth="370.0" layoutY="3.0" preserveRatio="false" />
+                  <ImageView fx:id="logo_imageView1" fitHeight="500.0" fitWidth="370.0" layoutY="3.0" pickOnBounds="true" visible="false">
+                     <image>
+                        <Image url="@image/new_bus_logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+                <AnchorPane fx:id="login_form" layoutX="351.0" layoutY="5.0" prefHeight="500.0" prefWidth="350.0">
+                    <children>
+                        <ImageView fitHeight="120.0" fitWidth="163.0" layoutX="115.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/user_icon.png" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="153.0" prefHeight="35.0" prefWidth="198.0" styleClass="signing" stylesheets="@LoginDesign.css" text="Welcome Back" textAlignment="CENTER" textFill="#143e6e">
+                            <font>
+                                <Font name="Berlin Sans FB" size="30.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="username" layoutX="65.0" layoutY="235.0" onAction="#login" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                        <PasswordField fx:id="password" layoutX="65.0" layoutY="279.0" onAction="#login" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                        <Button fx:id="login" alignment="CENTER" layoutX="125.0" layoutY="362.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="100.0" styleClass="login" stylesheets="@LoginDesign.css" text="Login" />
+                        <Button fx:id="close" layoutX="276.0" layoutY="1.0" mnemonicParsing="false" onAction="#close_new" prefHeight="20.0" prefWidth="40.0" styleClass="close" stylesheets="@LoginDesign.css" text="X" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0" />
+                  <Label layoutX="76.0" layoutY="428.0" text="Don't have an account ?" />
+                  <Button fx:id="goto_signup" layoutX="207.0" layoutY="419.0" mnemonicParsing="false" onAction="#goToSignup" prefHeight="35.0" prefWidth="77.0" styleClass="goto-signup-btn" stylesheets="@LoginDesign.css" text="Sign Up">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <CheckBox fx:id="login_selectShowPassword" layoutX="65.0" layoutY="319.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password" />
+                  <TextField fx:id="showPassword" layoutX="65.0" layoutY="279.0" onAction="#login" prefHeight="30.0" prefWidth="220.0" promptText="Password" visible="false" />
+                    </children>
+                </AnchorPane>
+            <AnchorPane fx:id="signup_form" layoutX="351.0" prefHeight="500.0" prefWidth="350.0" visible="false">
+               <children>
+                  <Label layoutX="88.0" layoutY="80.0" text="Sign Up Account">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+                   <TextField fx:id="signup_first_name" layoutX="65.0" layoutY="142.0" prefHeight="30.0" prefWidth="220.0" promptText="First Name" />
+                   <TextField fx:id="signup_last_name" layoutX="65.0" layoutY="185.0" prefHeight="30.0" prefWidth="220.0" promptText="Last Name" />
+                   <TextField fx:id="signup_usename" layoutX="65.0" layoutY="226.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                  <TextField fx:id="signup_email" layoutX="65.0" layoutY="266.0" prefHeight="30.0" prefWidth="220.0" promptText="Email" />
+                  <TextField fx:id="signup_password" layoutX="65.0" layoutY="308.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                  <TextField fx:id="signup_confirm_password" layoutX="65.0" layoutY="347.0" prefHeight="30.0" prefWidth="220.0" promptText="Confirm Password" />
+                  <Button fx:id="signup_btn" layoutX="125.0" layoutY="400.0" mnemonicParsing="false" onAction="#signUp" prefHeight="35.0" prefWidth="100.0" styleClass="login" stylesheets="@LoginDesign.css" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="55.0" layoutY="450.0" text="Already have an account ?" />
+                  <Button fx:id="goto_login" layoutX="210.0" layoutY="445.0" mnemonicParsing="false" onAction="#goToLogin" styleClass="goto-signup-btn" stylesheets="@LoginDesign.css" text="Login" />
+                  <Button layoutX="302.0" layoutY="8.0" mnemonicParsing="false" onAction="#close_new" prefHeight="35.0" prefWidth="40.0" styleClass="close" stylesheets="@LoginDesign.css" text="X" />
+                  </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

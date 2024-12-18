@@ -1,0 +1,81 @@
+
+
+.left-form{
+    -fx-background-color: linear-gradient(to bottom right, #6245c9, #4db764);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.goto-signup-btn{
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #1877F2; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: Tahoma;
+    -fx-cursor: hand; /* Pointer cursor */
+}
+
+.goto-signup-btn:hover{
+    /* Blue background on hover */
+
+    -fx-text-fill: #081894 ; /* White text on hover */
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+
+}
+
+.right-form{
+    -fx-background-color: #fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+    -fx-font-weight: bold;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color:#dd4763;
+}
+
+.signing{
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #081894 0.0%, #081894 4.3069%, #474ad1 28.2067%, #5093bc 52.439%, #5ac2dc 69.0244%, #78c8dc 80.7317%, #6bdbf7 95.9623%, #6bdbf7 100.0%);
+    -fx-text-fill: #3c9aff;
+}
+
+.text field{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-border-width:0px 0px .8px 0px;
+    -fx-font-size: 13px;
+    -fx-font-family:"Tahoma";
+}
+
+.text field:focused{
+    -fx-background-color: linear-gradient(to bottom right, #6245c9, #4db764);
+    -fx-border-width:0px 0px 1.8px 0px;
+}
+
+.login{
+    -fx-background-color: linear-gradient(
+            from 0% 0% to 100% 100%,
+            #6bdbf7 0%,         /* Aqua */
+            #78c8dc 20%,        /* Light blue */
+            #5ac2dc 40%,        /* Soft blue */
+            #5093bc 60%,        /* Blue */
+            #474ad1 80%,        /* Darker blue */
+            #081894 100%        /* Dark blue */
+    );
+    -fx-background-radius:8px;
+    -fx-text-fill: #2b0fb4;
+    -fx-font-size:20px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+
+.login:hover{
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #319196 0.0%, #319196 7.9907%, #5ea3a6 32.1951%, #409984 56.5854%, #49946d 74.6341%, #53a65a 89.0244%, #53a65a 100.0%)
+}
